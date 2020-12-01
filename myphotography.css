@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #202020;
+    text-align: center;
+}
+
+@font-face{
+    font-family: Spoqa Han Sans Regular;
+    src:url('Spoqa Han Sans Regular.ttf');
+    font-weight: normal;
+}
+
+body{
+    font-family: "맑은고딕", "고딕", "굴림";
+}
+@import url("https://fonts.googleapis.com/css?family=Bitter:700");
+.content {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content h1 {
+  font-family: 'Bitter', serif;
+  line-height: 1.4;
+  word-spacing: 3px;
+  max-width: 45rem;
+  text-shadow: 0px 1px 0px #202020;
+  background-color: white;
+}
+.content .highlight {
+  display: inline-block;
+  color: white;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #202020;
+  position: relative;
+  z-index: 0;
+}
+.content .highlight::after {
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 250ms;
+}
+.content .highlight:hover {
+  color: #202020;
+  text-shadow: 0px 1px 0px #202020;
+}
+.content .highlight:hover::after {
+  height: 105%;
+  width: 105%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 24px;
+}
+
+.btn-1,
+.btn-2 {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-1 a,
+.btn-2 a {
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 span {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.btn-2 span {
+ position: relative;
+  z-index: 3;
+  color: #202020;
+  background-color: transparent;
+}
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #202020;
+  transition: all 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before,
+.btn-2 a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #202020;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.btn-1 a:hover::after,
+.btn-2 a:hover::after {
+  transform: scaleX(0);
+}
+
+.btn-2 a {
+  color: #202020;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-2 a:hover {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.gallery {
+	width: 65%;
+	margin: 50px auto;
+    margin-top: 100px;
+}
+
+div.picture {
+	margin-top: 30px;
+}
+
+div.picture ul {
+	list-style-type: none;
+	margin-left: 35px;
+}
+
+div.picture ul li, div.picture li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+div.picture ul li {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin: 5px;
+	padding: 5px;
+	z-index: 0;
+}
+
+div.picture ul li:hover {
+	z-index: 5;
+}
+
+div.picture ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	background: #f0f0f0;
+}
+
+div.picture ul li img:hover {
+	width: 200px;
+	height: 200px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
+}
