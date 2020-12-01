@@ -25,7 +25,7 @@ body{
   font-family: 'Bitter', serif;
   line-height: 1.4;
   word-spacing: 3px;
-  max-width: 45rem;
+  max-width: 40rem;
   text-shadow: 0px 1px 0px #202020;
   background-color: white;
 }
@@ -171,10 +171,29 @@ body{
   transform: scaleX(1);
 }
 
-.gallery {
-	width: 65%;
-	margin: 50px auto;
-    margin-top: 100px;
+.gallery1 {
+	width: 40%;
+	margin: auto;
+    padding-right: 300px;
+}
+
+.gallery2 {
+	width: 40%;
+	margin: auto;
+    padding-left: 300px;
+}
+
+.gallery3 {
+	width: 40%;
+	margin: auto;
+    padding-right: 300px;
+    
+}
+
+.gallery4 {
+	width: 40%;
+	margin: auto;
+    padding-left: 300px;
 }
 
 div.picture {
@@ -183,7 +202,7 @@ div.picture {
 
 div.picture ul {
 	list-style-type: none;
-	margin-left: 35px;
+	margin-left: 50px;
 }
 
 div.picture ul li, div.picture li img {
@@ -219,10 +238,104 @@ div.picture ul li img {
 }
 
 div.picture ul li img:hover {
-	width: 200px;
-	height: 200px;
+	width: 270px;
+	height: 270px;
 	margin-top: -130px;
 	margin-left: -130px;
 	top: 65%;
 	left: 65%;
+}
+
+
+table{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+td{
+    text-align: center;
+    font-family: "맑은고딕";   
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 25px;
+    color: white;
+    width: 50%;
+}
+
+
+.photern{
+    font-family: Times New Roman;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+.photern1{
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.season1{
+    font-family: Times New Roman;
+    color: white;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    padding-left: 260px;
+}
+
+.season2{
+    font-family: Times New Roman;
+    color: white;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    padding-right: 170px;
+}
+
+.season3{
+    font-family: Times New Roman;
+    color: white;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    padding-left: 240px;
+}
+
+.season4{
+    font-family: Times New Roman;
+    color: white;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    padding-right: 180px;
+}
+
+#copyright{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color:  white;
+    line-height: 20px;
+    font-size: 16px;
 }
