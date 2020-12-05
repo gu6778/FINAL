@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @font-face{
     font-family: Spoqa Han Sans Regular;
     src:url('Spoqa Han Sans Regular.ttf');
@@ -287,4 +291,26 @@ li { text-indent:999px; overflow:hidden; }
     color:  #703543;
     line-height: 20px;
     font-size: 16px;
+}
+
+.arrow{
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 9;
+}
+.arrow a{
+  height: 39px;
+  width: 37px;
+  text-align: center;
+  background: #703543;
+  display: block;
+  border-radius: 3px;
+}
+.arrow a span{
+  color: white;
+  font-size: 30px;
+  line-height: 39px;
+  cursor: pointer;
+  background-color: #703543;
 }
